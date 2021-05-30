@@ -1,0 +1,91 @@
+   const deployedNetwork = MarsPoolLand.networks[this.networkId];
+          this.MarsPoolLand = new this.web3.eth.Contract(
+            MarsPoolLand.abi,
+            deployedNetwork && LandToken,
+          );
+
+
+        if (currentSupply >= 1783) {
+            remainingNFT = 1786 - currentSupply;
+            soldNFT  = 3 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/3);
+        }
+        else if (currentSupply >= 1779) {
+            remainingNFT = 1782 - currentSupply; 	// 1780 - 1782 	10 ETH
+            soldNFT  = 3 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/3);
+        } else if (currentSupply >= 1529) {
+            remainingNFT = 1779 - currentSupply; 	// 1530 - 1779 		2.6 ETH
+            soldNFT  = 250 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/250);
+        } else if (currentSupply >= 1179) {
+            remainingNFT = 1529 - currentSupply;	// 1180  - 1529 	1.4 ETH
+            soldNFT  = 350 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/350);
+        } else if (currentSupply >= 789) {
+            remainingNFT = 1179 - currentSupply;		// 790 - 1179 		0.9 ETH
+            soldNFT  = 390 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/390);
+        } else if (currentSupply >= 449) {
+            remainingNFT = 789 - currentSupply; 		// 450 - 789 		0.5 ETH
+            soldNFT  = 340 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/340);
+        } else if (currentSupply >= 199) {
+            remainingNFT = 449 - currentSupply; 		// 200 - 449 		0.3 ETH
+            soldNFT  = 249 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/249);
+        } else {
+            remainingNFT = 100 - currentSupply;		// 0 - 199 			0.1 ETH 
+            soldNFT  = 100 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/100);
+        }
+
+        if (currentSupply >= 1783) {
+            remainingNFT = 1786 - currentSupply;
+            soldNFT  = 3 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/3);
+        }
+        else if (currentSupply >= 1534) {
+            remainingNFT = 1785 - currentSupply; 	  // 1535 - 1785 (251) 	  4.0 ETH
+            soldNFT  = 251 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/251);
+        } else if (currentSupply >= 1215) {
+            remainingNFT = 1534 - currentSupply; 	  // 1216 - 1534 (319)		3.0 ETH
+            soldNFT  = 319 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/319);
+        } else if (currentSupply >= 906) {
+            remainingNFT = 1215 - currentSupply;	  // 907 - 1215 (309) 	  2.5 ETH
+            soldNFT  = 309 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/309);
+        } else if (currentSupply >= 617) {
+            remainingNFT = 906 - currentSupply;		  // 618 - 906 (289)		  2.0 ETH
+            soldNFT  = 289 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/289);
+        } else if (currentSupply >= 348) {
+            remainingNFT = 617 - currentSupply; 		// 349 - 617 (269) 		  1.5 ETH
+            soldNFT  = 269 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/269);
+        } else if (currentSupply >= 99) {
+            remainingNFT = 348 - currentSupply; 		// 100 - 348 (249)		  1.0 ETH
+            soldNFT  = 249 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/249);
+        } else {
+            remainingNFT = 100 - currentSupply;		  // 0 - 99 (100)			    0.5 ETH 
+            soldNFT  = 100 - remainingNFT;
+            remaingPercentage = (100 * parseInt(soldNFT)/100);
+        }
+            
+         if (_total_supply >= 1784 && _total_supply <= 1790)
+          {
+            console.log("I am here in 286");
+            if(parseInt(nft) > 2)
+            {
+              NFTBuyable = 2;  // NFT Cannot be more than two at this point
+            }
+            else
+            {
+              NFTBuyable = nft; // Use selected only one;
+            }
+            conflict = true;  
+          } 
+          else             
